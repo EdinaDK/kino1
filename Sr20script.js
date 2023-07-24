@@ -1,6 +1,6 @@
 const rows = 9;
 const seatsPerRow = 10;
-let selectedSeatsVt17 = []
+let selectedSeats = []
 
 function generateSeats() {
     const cinemaSeats = document.getElementById("cinema-seats");
@@ -19,7 +19,7 @@ function generateSeats() {
                     selectSeat(i, j);
                 });
 
-                const isSelected = selectedSeatsVt17.some(seat => seat.row === i && seat.seat === j);
+                const isSelected = selectedSeats.some(seat => seat.row === i && seat.seat === j);
                 if (isSelected) {
                     seatElement.classList.add("selected");
                 }
@@ -57,21 +57,31 @@ function selectSeat(row, seat) {
 
     if (seatElement.classList.contains("selected")) {
         seatElement.classList.remove("selected");
-        const index = selectedSeatsVt17.findIndex(s => s.row === row && s.seat === seat);
-        selectedSeatsVt17.splice(index, 1);
+        const index = selectedSeats.findIndex(s => s.row === row && s.seat === seat);
+        selectedSeats.splice(index, 1);
     } else {
         seatElement.classList.add("selected");
-        selectedSeatsVt17.push({ row, seat });
+        selectedSeats.push({ row, seat });
     }
 
-    localStorage.setItem('seats', JSON.stringify(selectedSeatsVt17))
-    console.log(selectedSeatsVt17);
+    localStorage.setItem('seatsSr20', JSON.stringify(selectedSeats))
+    console.log(selectedSeats);
 }
 function goToPage(page) {
     window.location.href = page;
 }
 
+function clearSeats() {
+    selectedSeats = [];
+    const seatElements = document.querySelectorAll('.seat.selected');
+    seatElements.forEach(seatElement => {
+            seatElement.classList.remove('selected');
+        });
+    localStorage.removeItem('seatsSr20')
+    window.location.reload()
+}
+
 window.addEventListener('load', () => {
-    selectedSeatsVt17 = JSON.parse(localStorage.getItem('seats')) || [];
+    selectedSeats = JSON.parse(localStorage.getItem('seatsSr20')) || [];
     generateSeats();
 });

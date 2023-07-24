@@ -1,3 +1,4 @@
+@import url('http://fonts.googleapis.com/css?family=Montserrat');
 
 img.displayed{
     display: block;
@@ -18,11 +19,13 @@ img.displayed{
     box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
     position:relative;
-
-
-
-
 }
+
+.shadow-gradient-verh:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: all 0.3s ease;
+}
+
 .shadow-gradient{
     background-image: linear-gradient(to bottom,#ff5f6d,#ffc371);
     color:white;
@@ -33,11 +36,11 @@ img.displayed{
     font-weight: bold;
     box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
-    position:relative;
-    right:-1300px;
-    top:-170px;
+}
 
-
+.shadow-gradient:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: all 0.3s ease;
 }
 
 .seat {
@@ -51,6 +54,8 @@ img.displayed{
 
 .seat:hover {
     background-color: #348d1e;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transition: all 0.3s ease;
 }
 
 .seat.selected {
@@ -79,11 +84,9 @@ img.displayed{
     box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
     position:relative;
-    width: 250px;
-    height: 100px;
+    width: 400px;
+    height: 150px;
     margin: 0 10px;
-    right:-250px;
-    top:170px;
     font-size: 4em;
 
 }
@@ -105,4 +108,65 @@ img.displayed{
     width: 50px;
     height: 50px;
     margin: 0 5px 5px 5px;
+}
+
+h2 {
+    position: absolute;
+    font-family: 'Montserrat';
+    font-size: 48pt;
+    left: 50%;
+    transform: translate(-50%, 0);   
+}
+
+button {
+    cursor: pointer;
+}
+
+#btnMainPage {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#btn {
+    width: 300px;
+    height: 100px;
+    font-size: 24pt;
+}
+
+#titleMain {
+    position: relative;
+    font-family: 'Montserrat';
+    font-size: 48pt;
+    text-align: center;
+}
+
+.backDiv {
+    position: relative;
+    top: 0%
+}
+
+#btnClear {
+    position: absolute;
+    margin: 5px;
+    left: 53%;
+    top: 95%;
+    transform: translate(-50%, -100%);
+}
+
+.container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+h3 {
+    margin: 5px;
+    position: absolute;
+    font-family: 'Montserrat';
+    font-size: 18pt;
+    left: 44%;
+    top: 95%;
+    transform: translate(-50%, -100%);
 }

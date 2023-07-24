@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <title>Выбор мест в кинотеатре</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="Sr17script.js"></script>
 </head>
 <body>
-<button onclick="goToPage('Vtornik.html')" class="shadow-gradient-verh">Вторник</button>
-<button onclick="goToPage('Sreda.html')" class="shadow-gradient-verh">Среда</button>
-<button onclick="goToPage('Chetverg.html')" class="shadow-gradient-verh">Четверг</button>
+    <div class="backDiv">
+        <button onclick="goToPage('index.html')" class="shadow-gradient-verh" id="backBtn">На главную</button>
+    </div>
 
+    <h3>Среда 17:30</h3>
 
-<img class="displayed" src="component/Экран.png" height="100" width="600" />
-
-
-<div id="cinema-seats"></div>
-
-
-<script src="script.js"></script>
-</body>
+    <img class="displayed" src="component/Экран.png" height="100" width="600" />
+    <div id="cinema-seats"></div>
+    <div id="btnClear">
+        <button onclick="clearSeats()" class="shadow-gradient">Очистить</button>
+    </div></body>
 </html>

@@ -5,16 +5,20 @@
     <meta charset="UTF-8">
     <title>Выбор мест в кинотеатре</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-<button onclick="goToPage('Vtornik.html')" class="shadow-gradient-verh">Вторник</button>
-<button onclick="goToPage('Sreda.html')" class="shadow-gradient-verh">Среда</button>
-<button onclick="goToPage('Chetverg.html')" class="shadow-gradient-verh">Четверг</button>
+    <div class="container">
+        <div class="backDiv">
+            <button onclick="goToPage('index.html')" class="shadow-gradient-verh" id="backBtn">На главную</button>
+        </div>
 
-<button onclick="goToPage('Ch17.html')" class="shadow-gradient-time">17:30</button>
-<button onclick="goToPage('Ch20.html')" class="shadow-gradient-time">20:00</button>
-
-<script src="script.js"></script>
-
+        <h2>ЧЕТВЕРГ</h2>
+    
+        <div id="btnMainPage">
+            <button onclick="goToPage('Vt17.html')" class="shadow-gradient-time">17:30</button>
+            <button onclick="goToPage('Vt20.html')" class="shadow-gradient-time">20:00</button>
+        </div>
+    </div>
 </body>
 </html>

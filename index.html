@@ -4,25 +4,14 @@
 <head>
     <title>Выбор мест в кинотеатре</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body >
-    <button onclick="goToPage('Vtornik.html')" class="shadow-gradient-verh">Вторник</button>
-    <button onclick="goToPage('Sreda.html')" class="shadow-gradient-verh">Среда</button>
-    <button onclick="goToPage('Chetverg.html')" class="shadow-gradient-verh">Четверг</button>
-
-
-
-<img class="displayed" src="component/Экран.png" height="100" width="600" />
-
-
-<div id="cinema-seats"></div>
-
-<script src="script.js"></script>
-
-<button class="shadow-gradient" >Очистить</button>
-
-
-
-
+<body>
+    <h1 id="titleMain">ВЫБОР МЕСТ В КИНОТЕАТРЕ</h1>
+    <div id="btnMainPage">
+        <button onclick="goToPage('Vtornik.html')" class="shadow-gradient-verh" id="btn">Вторник</button>
+        <button onclick="goToPage('Sreda.html')" class="shadow-gradient-verh" id="btn">Среда</button>
+        <button onclick="goToPage('Chetverg.html')" class="shadow-gradient-verh" id="btn">Четверг</button>
+    </div>
 </body>
 </html>
