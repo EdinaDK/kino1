@@ -1,0 +1,108 @@
+
+img.displayed{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+    transform: translate(-23px,0px);
+
+}
+.shadow-gradient-verh{
+    background-image: linear-gradient(to bottom,#ff5f6d,#ffc371);
+    color:white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    position:relative;
+
+
+
+
+}
+.shadow-gradient{
+    background-image: linear-gradient(to bottom,#ff5f6d,#ffc371);
+    color:white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    position:relative;
+    right:-1300px;
+    top:-170px;
+
+
+}
+
+.seat {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: #53e82f;
+    cursor: pointer;
+}
+
+.seat:hover {
+    background-color: #348d1e;
+}
+
+.seat.selected {
+    background-color: #f00;
+}
+
+#saveBtn{
+    display: block;
+    margin: 20px auto;
+}
+
+#cinema-seats {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.shadow-gradient-time{
+    background-image: linear-gradient(to bottom,#ff5f6d,#ffc371);
+    color:white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    position:relative;
+    width: 250px;
+    height: 100px;
+    margin: 0 10px;
+    right:-250px;
+    top:170px;
+    font-size: 4em;
+
+}
+
+.number {
+    position: relative;
+    display: inline-block;
+    top: 30%;
+    transform: translate(0, -70%);
+    font-size: 16pt;
+    margin: 0;
+}
+
+.numberSeat {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    font-size: 16pt;
+    width: 50px;
+    height: 50px;
+    margin: 0 5px 5px 5px;
+}
